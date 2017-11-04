@@ -16,10 +16,12 @@ class Image(TimeStampeModel):
 
     """ Image Model """
 
+
     file = models.ImageField()
     location = models.CharField(max_length=140)
     caption = models.TextField()
     creator = models.ForeignKey(user_models.User, null=True)
+
 
     def __str__(self):
         return '{} - {}'.format(self.location, self.caption)
@@ -31,7 +33,7 @@ class Comment(TimeStampeModel):
 
     message = models.TextField()
     creator = models.ForeignKey(user_models.User, null=True)
-    image = models.ForeignKey(Image, null=True)
+    image = models.ForeignKey(Image, null=True, related_name='comments')
 
     def __str__(self):
         return self.message
@@ -43,7 +45,7 @@ class Like(TimeStampeModel):
     """ Like Model """
 
     creator = models.ForeignKey(user_models.User, null=True)
-    image = models.ForeignKey(Image, null=True)
+    image = models.ForeignKey(Image, null=True, related_name='likes')
 
     def __str__(self):
         return 'User:{} - Image Caption:{}'.format(self.creator.username, self.image.caption)
