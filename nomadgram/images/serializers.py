@@ -65,7 +65,26 @@ class ImageSerializer(serializers.ModelSerializer):
             'caption',
             'comments',
             'like_count',
-            'creator'
+            'creator',
+            'created_at'
         )
 
+class LikeSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.Like
+        fields = (
+            'creator',
+        )
+
+class InputImageSerializer(serializers.ModelSerializer):
+
+
+    class Meta:
+        model = models.Image
+        fields = (
+            'file',
+            'location',
+            'caption'
+        )
 
