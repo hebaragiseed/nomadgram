@@ -4,7 +4,7 @@ from taggit.managers import TaggableManager
 from nomadgram.users import models as user_models
 
 @python_2_unicode_compatible
-class TimeStampeModel(models.Model):
+class TimeStampedModel(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -13,7 +13,7 @@ class TimeStampeModel(models.Model):
         abstract = True
 
 @python_2_unicode_compatible
-class Image(TimeStampeModel):
+class Image(TimeStampedModel):
 
     """ Image Model """
     file = models.ImageField()
@@ -40,7 +40,7 @@ class Image(TimeStampeModel):
 
 
 @python_2_unicode_compatible
-class Comment(TimeStampeModel):
+class Comment(TimeStampedModel):
 
     """ Comment Model """
 
@@ -53,7 +53,7 @@ class Comment(TimeStampeModel):
 
 
 @python_2_unicode_compatible
-class Like(TimeStampeModel):
+class Like(TimeStampedModel):
 
     """ Like Model """
 
