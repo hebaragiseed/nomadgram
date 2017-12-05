@@ -1,11 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles.scss';
-import { LoginForm, SignupForm } from 'components/AuthForms';
+import LoginForm from 'components/LoginForm';
+import SignupForm from 'components/SignupForm';
 
 const Auth = (props, context) => (
   <main className={styles.auth}>
     <div className={styles.column}>
-      <img className={styles.phone} src={require('images/phone1.png')} alt="Chekout our app. Is cool" />
+      <img className={styles.phone} src={require('images/phone1.png')} alt={context.t('Chekout our app. Is cool')} />
     </div>
     <div className={styles.column}>
       <div className={`${styles.whiteBox} ${styles.formBox}`}>
@@ -14,28 +16,31 @@ const Auth = (props, context) => (
       </div>
       <div className={styles.whiteBox}>
       {props.action === 'login' && (
-        <p className={styles.text}>Don't have an account?{' '}
+        <p className={styles.text}>{context.t('Donn\'t have an account?')}{' '}
           <span onClick={props.changeAction} className={styles.changeLink}>
-            Sign up
+            {context.t('Sign up')}
           </span>
         </p>
       )}
         {props.action === 'signup' && (
-          <p className={styles.text}>Have an account{' '}
+          <p className={styles.text}>{context.t('Have an account')}{' '}
             <span onClick={props.changeAction} className={styles.changeLink}>
-            Login
+            {context.t('Login')}
             </span>
           </p>
         )}
       </div>
       <div className={styles.appBox}>
-        <span>Get the app</span>
+        <span>{context.t('Get the app')}</span>
         <div className={styles.appstores}>
-          <img src={require('images/ios.png')} alt="Download it on the Apple Appstore" />
-          <img src={require('images/android.png')} alt="Download it on the Android Googleplay" />
+          <img src={require('images/ios.png')} alt={context.t("Download it on the Apple Appstore")} />
+          <img src={require('images/android.png')} alt={context.t("Download it on the Android Googleplay")} />
         </div>
       </div>
     </div>
   </main>
 );
+Auth.contextTypes = {
+  t: PropTypes.func.isRequired
+};
 export default Auth;

@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Language: ko"
+
+#: src/components/Auth/presenter.js
+msgid "Chekout our app. Is cool"
+msgstr "로그아웃"
+
+#: src/components/Auth/presenter.js
+msgid "Donn\'t have an account?"
+msgstr "가입 전 인가요?"
+
+#: src/components/Auth/presenter.js
+#: src/components/AuthForms/index.js
+msgid "Sign up"
+msgstr "가입하기"
+
+#: src/components/Auth/presenter.js
+msgid "Have an account"
+msgstr "가입 되었어요"
+
+#: src/components/Auth/presenter.js
+msgid "Login"
+msgstr "로그인"
+
+#: src/components/Auth/presenter.js
+msgid "Get the app"
+msgstr "앱 끝내기"
+
+#: src/components/Auth/presenter.js
+msgid "Download it on the Apple Appstore"
+msgstr ""
+
+#: src/components/Auth/presenter.js
+msgid "Download it on the Android Googleplay"
+msgstr ""
+
+#: src/components/AuthForms/index.js
+msgid "username"
+msgstr "이름"
+
+#: src/components/AuthForms/index.js
+msgid "password"
+msgstr "패스워드"
+
+#: src/components/AuthForms/index.js
+msgid "Log in"
+msgstr ""
+
+#: src/components/AuthForms/index.js
+msgid "or"
+msgstr "또는"
+
+#: src/components/AuthForms/index.js
+msgid "Log in with Facebook"
+msgstr "페이스북으로 로그인하기"
+
+#: src/components/AuthForms/index.js
+msgid "Forgot password?"
+msgstr "비밀번호를 잊어버렸나요?"
+
+#: src/components/AuthForms/index.js
+msgid "Sign up to see photos and videos from yor friends."
+msgstr ""
+
+#: src/components/AuthForms/index.js
+msgid "Email"
+msgstr "이메일"
+
+#: src/components/AuthForms/index.js
+msgid "Full Name"
+msgstr "성명"
+
+#: src/components/AuthForms/index.js
+msgid "Username"
+msgstr "이름"
+
+#: src/components/AuthForms/index.js
+msgid "Password"
+msgstr ""
+
+#: src/components/AuthForms/index.js
+msgid "By siging up, you agree to our"
+msgstr ""
+
+#: src/components/AuthForms/index.js
+msgid "Terms & Privacy Policy"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "About Us"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Support"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Blog"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Press"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "API"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Jobs"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Privacy"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Terms"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Directory"
+msgstr ""
+
+#: src/components/Footer/index.js
+msgid "Language"
+msgstr ""
+

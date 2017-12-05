@@ -1,5 +1,37 @@
 export const translations = {
-  es: {
-    'Login in': 'Iniciar Sesion'
-  }
+  'ko': {
+    'Chekout our app. Is cool': '로그아웃',
+    'Donn\'t have an account?': '가입 전 인가요?',
+    'Sign up': '가입하기',
+    'Have an account': '가입 되었어요',
+    'Login': '로그인',
+    'Get the app': '앱 끝내기',
+    'Download it on the Apple Appstore': '',
+    'Download it on the Android Googleplay': '',
+    'username': '이름',
+    'password': '패스워드',
+    'Log in': '',
+    'or': '또는',
+    'Log in with Facebook': '페이스북으로 로그인하기',
+    'Forgot password?': '비밀번호를 잊어버렸나요?',
+    'Sign up to see photos and videos from yor friends.': '',
+    'Email': '이메일',
+    'Full Name': '성명',
+    'Username': '이름',
+    'Password': '',
+    'By siging up, you agree to our': '',
+    'Terms & Privacy Policy': '',
+    'About Us': '',
+    'Support': '',
+    'Blog': '',
+    'Press': '',
+    'API': '',
+    'Jobs': '',
+    'Privacy': '',
+    'Terms': '',
+    'Directory': '',
+    'Language': '',
+  },
+  'options': {
+  },
 }
