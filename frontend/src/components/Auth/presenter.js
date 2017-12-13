@@ -7,10 +7,11 @@ import SignupForm from 'components/SignupForm';
 const Auth = (props, context) => (
   <main className={styles.auth}>
     <div className={styles.column}>
-      <img className={styles.phone} src={require('images/phone1.png')} alt={context.t('Chekout our app. Is cool')} />
+      <img className={styles.phone} src={require('images/phone.png')} alt={context.t('Chekout our app. Is cool')} />
     </div>
     <div className={styles.column}>
       <div className={`${styles.whiteBox} ${styles.formBox}`}>
+        <img src={require('images/logo.png')} alt="logo" />
         {props.action === 'login' && <LoginForm />}
         {props.action === 'signup' && <SignupForm />}
       </div>
